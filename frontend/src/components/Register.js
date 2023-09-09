@@ -16,6 +16,7 @@ const Register = (props) => {
     // Example POST method implementation:
     //hit api call for register
     const response = await fetch("https://i-note-book-cloud-api.vercel.app/api/auth/createuser", {
+      mode: 'no-cors',
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       headers: {
         "Content-Type": "application/json",

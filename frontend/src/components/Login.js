@@ -11,6 +11,7 @@ const Login = (props) => {
     //API call
     //Hit api for login
     const response = await fetch("https://i-note-book-cloud-api.vercel.app/api/auth/login", {
+      mode: 'no-cors',
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       headers: {
         "Content-Type": "application/json",

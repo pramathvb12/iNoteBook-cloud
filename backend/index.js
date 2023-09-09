@@ -8,7 +8,8 @@ connectMongo(); // connecting to mongo
 app.use(cors({
       origin:'https://i-note-book-cloud-main.vercel.app/login',
       methods:["POST","GET","PUT","DELETE"],
-      credentials:true
+      credentials:true,
+      allowedHeaders: ['Content-Type', 'Authorization']
 })); // Cross-Origin Resource Sharing is a mechanism by which a front-end client can make requests for resources to an external back-end server.
 app.use(express.json()); //use express json formater
 app.get("/", (req, res) => {

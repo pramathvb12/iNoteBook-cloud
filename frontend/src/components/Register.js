@@ -27,8 +27,8 @@ const Register = (props) => {
         password: credential.password.join(),
       }),
     });
-    // const json = await response.json();
-    // console.log(json);
+    const json = await response.json();
+    console.log(json);
     if (json.sucess) {
       //save the auth token and redirect
       //set token to localstorage
